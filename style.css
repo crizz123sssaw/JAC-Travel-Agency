@@ -680,6 +680,85 @@ td strong {
     transform: translateY(-4px);
 }
 
+/* =========================================
+   ADDITIONAL PROJECT IMPROVEMENTS
+========================================= */
+
+/* LINKS INSIDE ITINERARY AND SOURCES */
+
+.stop a,
+.journey-info a,
+.source-block a {
+    color: var(--green-light);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: 0.3s;
+}
+
+.stop a:hover,
+.journey-info a:hover,
+.source-block a:hover {
+    color: var(--orange);
+}
+
+/* TRANSPORT INFORMATION */
+
+.journey-info {
+    line-height: 1.8;
+    margin: 18px 0;
+}
+
+.journey-info strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* WEATHER ALTERNATIVES */
+
+.info-banner {
+    line-height: 1.7;
+    border-left: 4px solid var(--orange);
+}
+
+.info-banner strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* BUDGET INFORMATION */
+
+.budget-note {
+    margin-top: 20px;
+    padding: 18px 22px;
+    background: #f4eee3;
+    border-radius: 12px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--gray);
+}
+
+/* SOURCE REFERENCES */
+
+.source-block a {
+    overflow-wrap: anywhere;
+}
+
+.source-block li {
+    line-height: 1.8;
+}
+
+/* TABLE HIGHLIGHT */
+
+table tbody tr:last-child {
+    background: #f4eee3;
+}
+
+table tbody tr:last-child td {
+    color: var(--green);
+    font-weight: 700;
+}
+
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 950px) {
@@ -693,6 +772,7 @@ td strong {
 }
 
 @media (max-width: 760px) {
+
     .navbar {
         height: 75px;
     }
@@ -778,9 +858,29 @@ td strong {
     .map-container {
         height: 300px;
     }
+
+    .journey-info {
+        font-size: 12px;
+        padding: 14px;
+    }
+
+    .budget-note {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .source-block {
+        padding: 20px;
+    }
+
+    .stop a,
+    .source-block a {
+        overflow-wrap: anywhere;
+    }
 }
 
 @media (max-width: 420px) {
+
     .hero h1 {
         font-size: 46px;
     }
